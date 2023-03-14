@@ -56,7 +56,7 @@ class App(ct.CTk):
     def getSummary(self):
      
         text = self.entry.get()
-        openai.api_key = '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'
+        openai.api_key = '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'
         response = openai.Completion.create(
             model='text-davinci-003',
             prompt=f'Summarize this text with the most unique and helpful parts\n\n{text}',
